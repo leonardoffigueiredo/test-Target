@@ -104,7 +104,6 @@
   </div>
 
   <script>
-    // Dados XML
     const dadosXML = `<?xml version="1.0" encoding="UTF-8"?>
         <dados>
           <row>
@@ -229,15 +228,12 @@
           </row>
         </dados>`;
 
-    // Parse XML
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(dadosXML, "text/xml");
 
-    // Obtendo elementos
     const rows = xmlDoc.getElementsByTagName("row");
     const tabela = document.getElementById("tabela-faturamento").getElementsByTagName("tbody")[0];
 
-    // Inserindo os dados na tabela
     for (let i = 0; i < rows.length; i++) {
       const dia = rows[i].getElementsByTagName("dia")[0].textContent;
       const valor = parseFloat(rows[i].getElementsByTagName("valor")[0].textContent).toFixed(2);
