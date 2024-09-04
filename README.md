@@ -39,7 +39,7 @@ O arquivo `faturamento-mensal.html` foi gerado a partir dos dados contidos no ar
     {"dia": 29, "valor": 13220.495},
     {"dia": 30, "valor": 8414.61}
 ]
-
+````
 ## Arquivo: relatorio-financeiro-mensal.html
 
 O arquivo `relatorio-financeiro-mensal.html` foi gerado a partir dos dados contidos no arquivo `dados (2).xml`. As informações em `dados (2).xml` incluem os valores de faturamento diário conforme listado abaixo:
